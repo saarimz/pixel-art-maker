@@ -1,6 +1,6 @@
 // Select color input
 // Select size input
-/*
+
 // When size is submitted by the user, call makeGrid()
 $(document).ready(function(){
 
@@ -41,36 +41,5 @@ $(document).ready(function(){
     });
 
 });
-*/
-
-//defaults
-const tBody = document.createElement("tbody");
-document.getElementById("pixel_canvas").appendChild(tBody);
 
 
-//makeGrid
-function makeGrid(height,width){
-	//clear table body
-	document.getElementsByTagName("tbody")[0].innerHTML = "";
-	//function to create cells to insert
-  	let stringToInsert = function(height,width) {
-		let result = "";
-		for (let i = 0; i < height; i++) {
-	      result += "<tr>";
-	      for (let j = 0; j < width; j++) {
-	      	result += "<td></td>";
-	      }
-	      result += "</tr>";
-		}
-		return result;
-	};
-	//make the actual grid
-  	document.getElementsByTagName("tbody")[0].innerHTML = stringToInsert(height,width);
-}
-
-document.getElementsByTagName("input")[2].addEventListener("click",function(e){
-	e.preventDefault();
-	let inputHeight = document.getElementById('input_height').value;
-	let inputWidth = document.getElementById('input_width').value;
-	makeGrid(inputHeight,inputWidth);
-});
