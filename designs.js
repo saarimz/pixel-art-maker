@@ -68,9 +68,14 @@ function makeGrid(height,width){
   	document.getElementsByTagName("tbody")[0].innerHTML = stringToInsert(height,width);
 }
 
+//submit button event listener
 document.getElementsByTagName("input")[2].addEventListener("click",function(e){
 	e.preventDefault();
 	let inputHeight = document.getElementById('input_height').value;
 	let inputWidth = document.getElementById('input_width').value;
 	makeGrid(inputHeight,inputWidth);
 });
+
+//make cell event listener to change background color
+
+//make color picker event listener
