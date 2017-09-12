@@ -1,16 +1,7 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+## What is this?
+This is a simple canvas written in vanilla JavaScript for making pixel art, you've got your grid and color picker - that's it. I made this for Udactiy's Front End Developer Nanodegree course.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-
-## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## How can I check it out
+You can check out the project [here](http://www.saarimzaman.com/pixel-art-maker/)
